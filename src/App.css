@@ -1,0 +1,62 @@
+#root {
+margin: 0 auto;
+min-width: 1000px;
+text-align: center;
+  
+}
+
+button{
+  margin-left: 20px;
+}
+li{
+  padding-bottom: 5px;
+}
+
+   
+/* Navbar Container */
+nav {
+  display: flex;
+  background-color:red;
+  padding: 20px 0px;
+  color: #fff;
+  gap: 1.5rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Link Styling */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 80px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347; /* Highlight color on hover */
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Active Link (optional, add an active class if desired) */
+nav a.active {
+  color: #ff6347; /* Highlight color for active link */
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav a {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+
